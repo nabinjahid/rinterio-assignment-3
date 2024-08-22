@@ -22,25 +22,88 @@
             theme: {
                 extend: {
                     colors: {
-                        primary:'#ABEF5F',
-                        secondary:'#212121',
-                        body:'#FFFFFF',
-                        accent:'#ABEF5F80'
+                        primary: '#ABEF5F',
+                        secondary: '#212121',
+                        body: '#FFFFFF',
+                        accent: '#ABEF5F80'
                     },
                     fontFamily: {
                         Manrope: 'Manrope'
                     },
-                    backgroundImage:{
-                        form_bg:"url('./assets/bg.jpg')"
+                    backgroundImage: {
+                        form_bg: "url('./assets/bg.jpg')"
                     }
                 }
             }
         }
     </script>
 </head>
-
 <body class="max-w-[1440px] mx-auto">
-     <h1 class="text-secondary h-40 text-2xl bg-form_bg">Project setup</h1>
+    <header class="w-11/12 mx-auto">
+        <!-- navbar -->
+        <div class="navbar bg-base-100 font-Manrope">
+            <div class="navbar-start w-full md:w-1/2 flex-row-reverse md:flex-row justify-between md:justify-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content right-0 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Protfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="flex items-center space-x-1">
+                        <i class="fa-solid fa-arrow-right -rotate-45 bg-primary p-2 rounded-full"></i> <span
+                            class="text-3xl font-bold">Rinterio</span>
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-semibold">
+                    <li><a>Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Protfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end space-x-2 hidden lg:inline-flex">
+                <p class="w-10 h-10 flex justify-center items-center border bg-white rounded-full shadow-md"><i
+                        class="fa-solid fa-magnifying-glass"></i></p>
+
+                <p class="w-10 h-10 flex items-center justify-center border shadow-md bg-white rounded-full "><i
+                        class="fa-solid fa-cart-shopping"></i></p>
+
+                <button class="bg-primary py-2 px-3 rounded-2xl flex space-x-1 font-bold">
+                    <p>Book Consult</p>
+                    <p class="w-6 h-6 bg-[#1C1C1C] rounded-full"><i
+                            class="fa-solid fa-arrow-right -rotate-45 text-white"></i></p>
+                </button>
+            </div>
+        </div>
+
+
+
+
+        <!-- banner -->
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
 
 </html>
